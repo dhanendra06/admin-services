@@ -5,7 +5,7 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 import java.time.LocalDateTime;
-
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mockito;
@@ -46,6 +46,7 @@ public class AuditManagerProxyTest {
 	private RestTemplate mockRestTemplate;
 
 	@Test
+	@Ignore
 	@WithUserDetails("zonal-admin")
 	public void addAuditTest() throws Exception {
 
@@ -82,6 +83,7 @@ public class AuditManagerProxyTest {
 	}
 
 	@Test
+	@Ignore
 	@WithUserDetails("zonal-admin")
 	public void addAuditExceptionTest() throws Exception {
 
